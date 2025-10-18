@@ -1,30 +1,34 @@
 ## 1. 정보
 
-* **문제 링크:** [[문제 URL](https://github.com/jw-park-dev/coding-interview/blob/main/Programmers/Math/n%EC%9D%98-%EB%B0%B0%EC%88%98.java)]
+* **문제 링크:** [[문제 URL](https://school.programmers.co.kr/learn/courses/30/lessons/181889)]
 * **난이도:** [Level 0]
 * **유형:** [Math]
 
-
-## 2. 접근
-
-* x가 y의 배수가 되기 위한 조건: x를 y로 나눴을 때의 나머지가 0.
-
-
-## 3. 풀이
-
+## 2. 풀이
+### 풀이1
 ```java
 class Solution {
-    public int solution(int num, int n) {
-        if (num % n == 0) {
-            return 1;
+    public int[] solution(int[] num_list, int n) {
+        int[] ans = new int[n];
+        for (int i = 0; i < n; i++) {
+            ans[i] = num_list[i];
         }
-        return 0;
+        return ans;
+    }
+}
+```
+### 풀이2
+```java
+import java.util.Arrays;
+
+class Solution {
+    public int[] solution(int[] num_list, int n) {
+        return Arrays.copyOfRange(num_list, 0, n);
     }
 }
 ```
 
-
-## 4. 학습
+## 3. 학습
 
 
 ### `int[] ans = {};` vs `int[] ans = new int[n];`
@@ -103,7 +107,7 @@ class Solution {
 * **특징**:
     * 복사될 새 배열의 길이는 `to - from`이 됨.
     * 범위가 원본을 벗어나도 에러 대신 기본값으로 채워짐.
-* **Typical 구조 예시**:
+* **구조 예시**:
     ```java
     // 원본 배열의 인덱스 1부터 4 전까지 (즉, 1, 2, 3 인덱스) 복사
     int[] original = {1, 2, 3, 4, 5};
