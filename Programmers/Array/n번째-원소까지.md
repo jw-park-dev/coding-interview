@@ -83,7 +83,7 @@ class Solution {
 * **특징**:
     * `newLength`가 원본보다 짧으면: 앞에서부터 `newLength`만큼만 복사 (잘림).
     * `newLength`가 원본보다 길면: 원본 내용을 다 복사하고, 나머지 공간은 타입 기본값(int는 0, 객체는 null)으로 채움.
-* **Typical 구조 예시**:
+* **구조 예시**:
     ```java
     // 원본 배열의 앞 3개만 복사
     int[] original = {1, 2, 3, 4, 5};
@@ -129,7 +129,7 @@ class Solution {
 ### `int[]` 인덱스 값 할당
 
 
-#### `int[]` 표기법
+#### `int[]`
 
 * "int 배열", Integer array, "정수 배열"
 
