@@ -119,6 +119,40 @@ class Solution {
 
 ---
 
+### `ArrayList.get()`
+
+* **설명**: `ArrayList`에서 특정 인덱스(위치)에 저장되어 있는 원소(element)를 반환(조회)함.
+* **문법**: `E get(int index)`
+    * `E`: 리스트를 선언할 때 지정한 제네릭 타입 (e.g., `ArrayList<Integer>`면 `Integer`).
+* **파라미터**:
+    * `int index`: 가져올 원소의 위치. **0부터 시작**함.
+* **반환값**: `E` (해당 `index` 위치의 원소)
+    * `ArrayList<Integer>`에서 `get()`을 호출하면 `Integer` 객체를 반환. (필요시 `int`로 자동 언박싱됨)
+* **구조 예시**:
+    ```java
+    List<String> list = new ArrayList<>();
+    list.add("apple");  // 0번 인덱스
+    list.add("banana"); // 1번 인덱스
+
+    // 인덱스 0 (첫 번째) 원소 가져오기
+    String fruit1 = list.get(0); // fruit1은 "apple"
+
+    // 인덱스 1 (두 번째) 원소 가져오기
+    String fruit2 = list.get(1); // fruit2은 "banana"
+
+    // (활용) 반복문에서 리스트 순회
+    for (int i = 0; i < list.size(); i++) {
+        System.out.println(list.get(i));
+    }
+    ```
+* **사용처**:
+    * 리스트의 특정 위치에 있는 값을 읽어와야 할 때.
+    * 배열(`arr[i]`)에서 인덱스를 사용해 값을 읽는 것과 동일한 역할을 함.
+* **주의**:
+    * **0-based 인덱싱**: 인덱스는 `0`부터 `(리스트 크기 - 1)`까지임.
+    * `IndexOutOfBoundsException`: `index`가 음수거나 `(리스트 크기 - 1)`보다 크면 런타임 예외 발생.
+---
+
 ### `List<Integer>`를 `int[]`로 변환 (stream 활용)
 
 #### (1) `.stream()`
