@@ -79,7 +79,7 @@ class Solution {
     * `E element`: 리스트에 추가할 원소. `ArrayList<T>`를 선언할 때 `<T>`에 지정한 타입의 값이어야 함. (e.g., `ArrayList<Integer>`에는 `Integer` 또는 `int` 값).
 * **반환값**: `boolean`
     * 항상 `true`를 반환 (Collection 인터페이스 정의상 명시되어 있으나, `ArrayList`는 추가가 실패하는 경우가 거의 없으므로 코테에서는 이 반환값을 무시하고 사용).
-* **Typical 구조 예시**:
+* **구조 예시**:
     ```java
     // 1. Integer를 저장할 수 있는 ArrayList 생성
     List<Integer> answerList = new ArrayList<>();
