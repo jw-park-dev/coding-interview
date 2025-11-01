@@ -18,7 +18,6 @@ class Solution {
         }
         
         String[] ans = list.toArray(new String[0]);
-        // String[] ans = new String[list.size()];
         return ans;
     }
 }
