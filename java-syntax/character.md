@@ -1,8 +1,7 @@
-- [Character.isLetterOrDigit](##characterisletterordigit)
-- [Character.toLowerCase](##charactertolowercase)
 
 
-## Character.isLetterOrDigit()
+
+## Character.isLetterOrDigit
 
 문자가 '문자(Letter)' 또는 '숫자(Digit)'인지 여부를 판별하는 메서드.
 
@@ -39,7 +38,7 @@ public static boolean isLetterOrDigit(int codePoint)
 
 ---
 
-### Character.toLowerCase()
+### Character.toLowerCase
 
 문자를 소문자로 변환하는 메서드.
 
@@ -77,3 +76,6 @@ public static int toLowerCase(int codePoint)
 - **한글 등 대소문자 구분이 없는 문자의 경우**:
     - `'A'`는 `'a'`로 변환됨.
     - `'가'`, `'!`, `'7'` 등 대소문자 구분이 없는 문자는 아무 변환 없이 **원래 문자 그대로 반환**됨. (예: `Character.toLowerCase('가')` -> `'가'`)
+ 
+- [Character.isLetterOrDigit](#characterisletterordigit)
+- [Character.toLowerCase](#charactertolowercase)
