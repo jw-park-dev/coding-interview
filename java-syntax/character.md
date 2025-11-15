@@ -6,9 +6,11 @@
 
 ---
 
-## Character.isLetterOrDigit
 
-문자가 '문자(Letter)' 또는 '숫자(Digit)'인지 여부를 판별하는 메서드.
+## Character.isLetterOrDigit
+* 관련 문제: [125. Valid Palindrome_1. 유효한 팰린드롬](https://github.com/jw-park-dev/coding-interview/blob/main/Blind-75/two-pointers/valid-palindrome.md)
+
+**문자가 '문자(Letter)' 또는 '숫자(Digit)'인지 여부를 판별하는 메서드.**
 
 #### 1. 구조 (Signature)
 
@@ -44,8 +46,9 @@ public static boolean isLetterOrDigit(int codePoint)
 ---
 
 ### Character.toLowerCase
-
-문자를 소문자로 변환하는 메서드.
+* 문제: [125. Valid Palindrome_1. 유효한 팰린드롬](https://github.com/jw-park-dev/coding-interview/blob/main/Blind-75/two-pointers/valid-palindrome.md)
+  
+**문자를 소문자로 변환하는 메서드.**
 
 #### 1. 구조 (Signature)
 
