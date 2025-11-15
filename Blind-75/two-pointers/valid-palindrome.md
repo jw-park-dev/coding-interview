@@ -50,3 +50,4 @@ public boolean isPalindrome(String s) {
 * Q: left와 right 포인터가 비대칭적인(서로 다른) 횟수만큼 건너뛰게 되어도 로직에 문제가 없는 이유?
 * A: 이 문제는 '인덱스 대칭'이 아닌 '유효 문자 순서 대칭'을 검사하는 것이기 때문. 왼쪽에서 유효 문자를 찾기 위해 1칸을 건너뛰고<br>
      오른쪽에서 찾기 위해 3칸을 건너뛴 상태에서 두 문자를 비교해도 상관이 없다.
+* [Character.isLetterOrDigit() .toLowerCase()](https://github.com/jw-park-dev/coding-interview/blob/main/java-syntax/character.md)
