@@ -1,5 +1,10 @@
 
+---
 
+- [Character.isLetterOrDigit](#characterisletterordigit)
+- [Character.toLowerCase](#charactertolowercase)
+
+---
 
 ## Character.isLetterOrDigit
 
@@ -77,5 +82,4 @@ public static int toLowerCase(int codePoint)
     - `'A'`는 `'a'`로 변환됨.
     - `'가'`, `'!`, `'7'` 등 대소문자 구분이 없는 문자는 아무 변환 없이 **원래 문자 그대로 반환**됨. (예: `Character.toLowerCase('가')` -> `'가'`)
  
-- [Character.isLetterOrDigit](#characterisletterordigit)
-- [Character.toLowerCase](#charactertolowercase)
+
