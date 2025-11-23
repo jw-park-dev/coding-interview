@@ -84,21 +84,25 @@ int currentMaxLen = 0;  // 현재까지의 팰린들롬 중 최대 길이
             RightIdx++;
         }
 
-        // while문을 타지 않았다는건(=if문에 도달했다는건), 현재 leftIdx~RightIdx 범위의 부분 문자열은 유효하지 않은 범위이거나 
-        // 팰린들롬이 아니라는 의미이므로(유효한 팰린들롬은 현재 부분 문자열이 확장 되기 직전에 leftIdx+1 ~ RightIdx-1 범위의 부분 문자열이다)
+        // while문을 타지 않았다는건(=if문에 도달했다는건), 현재 leftIdx~RightIdx 범위의 부분 문자열은
+        // 유효하지 않은 범위이거나 팰린들롬이 아니라는 의미이므로(유효한 팰린들롬은 현재 부분 문자열이
+        // 확장 되기 직전에 leftIdx+1 ~ RightIdx-1 범위의 부분 문자열이다)
         // 현재 유효성을 검증 중인 부분 문자열에서 팰린들롬인 부분의 길이는 (RightIdx-1) - (leftIdx+1) + 1
         // 즉 RightIdx - leftIdx -1이다.
 
         // curMaxLen: 기존 최대 길이
         // RightIdx - leftIdx - 1: 현재의 부분 문자열의 길이 
-        // 현재까지 탐색한 최대 길이의 팰린들롬(currentMaxLen)보다, 현재 유효성을 검증 중인 부분 문자열에서 팰린들롬인 부분의 길이가 더 길다면 
+        // 현재까지 탐색한 최대 길이의 팰린들롬(currentMaxLen)보다, 현재 유효성을 검증 중인 부분 문자열에서
+        // 팰린들롬인 부분의 길이가 더 길다면 
         if (currentMaxLen < (RightIdx-1) - (leftIdx+1) + 1) {
-            // while 문이 끝났다는 건(=if 문 내부로 들어왔다는건) 현재 leftIdx~leftIdx 범위의 부분문자열까지만 팰린들롬이고, 그 이상 좌우로
-            // 확장하면 팰린들롬이 아니거나 유효한 범위를 넘어섰다는 의미이므로, 현재의 startIdx를 시작 인덱스로 하는 팰린들롬에 대한
-            // 탐색은 멈춰야 하며, leftIdx~leftIdx 범위의 부분문자열에서 시작 인덱스에 해당하는 leftIdx의 그 다음 인덱스를 시작 인덱스로
+            // while 문이 끝났다는 건(=if 문 내부로 들어왔다는건) 현재 leftIdx~leftIdx 범위의 부분문자열까지만
+            // 팰린들롬이고, 그 이상 좌우로 확장하면 팰린들롬이 아니거나 유효한 범위를 넘어섰다는 의미이므로
+            // 현재의 startIdx를 시작 인덱스로 하는 팰린들롬에 대한 탐색은 멈춰야 하며, leftIdx~leftIdx 범위의
+            // 부분문자열에서 시작 인덱스에 해당하는 leftIdx의 그 다음 인덱스를 시작 인덱스로
             // 하는 새로운 부분 문자열에 대한 팰린들롬 탐색을 진행하기 위해, startIdx = leftIdx + 1;를 수행.  
             startIdx = leftIdx + 1;
-            // 현재까지 탐색한 최대 길이의 팰린들롬(currentMaxLen)보다, 현재 유효성을 검증 중인 부분 문자열에서 팰린들롬인 부분의 길이가 더 기니까
+            // 현재까지 탐색한 최대 길이의 팰린들롬(currentMaxLen)보다, 현재 유효성을 검증 중인 부분 문자열에서
+            // 팰린들롬인 부분의 길이가 더 기니까
             // currentMaxLen를 현재 길이로 갱신.
             currentMaxLen = (RightIdx-1) - (leftIdx+1) + 1;
         }
