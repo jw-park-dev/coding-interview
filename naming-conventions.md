@@ -1,4 +1,25 @@
+### char
+* c: char형 변수.
 
+### String
+* s: String 변수.
+
+### String
+* sb: StringBuilder형 변
+
+* idx: 반복문 외의 경우에 인덱스를 나타낼 떄 사용.
+* s: start Index
+* e: end Index
+
+### ArrayList
+* list: List 변수
+
+### HashMap
+* map: Map 변수
+* k: map의 key.
+* v: map의 value.
+
+### Queue
 
 
 ### 반복문(Loop)
